@@ -57,7 +57,7 @@ const AuthForm = ({setToken}) => {
         const email=formData.email;
         const password=formData.password;
         await axios
-        .post("https://invoice-management-system-server.vercel.app/login", {email,password} )
+        .post("https://invoice-management-system-server.vercel.app/api/login", {email,password} )
         .then((res) => {
             localStorage.setItem('email',res.data.user.email)
             localStorage.setItem('token',res.data.token)
@@ -85,7 +85,7 @@ const AuthForm = ({setToken}) => {
 
         // Send data to the server
         await axios
-          .post("https://invoice-management-system-server.vercel.app/register", formData)
+          .post("https://invoice-management-system-server.vercel.app/api/register", formData)
           .then((res) => {
             localStorage.setItem('email',res.data.user.email)
             localStorage.setItem('token',res.data.token)
