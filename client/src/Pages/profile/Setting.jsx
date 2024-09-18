@@ -61,7 +61,7 @@ const Setting = () => {
     e.preventDefault();
     setLoading(true)
     try {
-      const res = await axios.put('https://invoice-management-system-server.vercel.app/update', formData);
+      const res = await axios.put('https://invoice-management-system-server.vercel.app/api/update', formData);
       localStorage.setItem('email',res.data.user.email)
       localStorage.setItem('image',res.data.user.image)
       setLoading(false)
