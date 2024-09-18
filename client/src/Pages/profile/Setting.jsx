@@ -24,7 +24,7 @@ const Setting = () => {
     // Fetch user data
     const fetchUserData = async () => {
       try {
-        const res = await axios.post('https://invoice-management-system-server.vercel.app/user', { email });
+        const res = await axios.post('https://invoice-management-system-server.vercel.app/api/user', { email });
         setUser(res.data.user);
         setFormData(res.data.user);
       } catch (error) {
