@@ -60,7 +60,7 @@ const NewInvoices = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:4000/invoice/create', formData);
+      const response = await axios.post('https://invoice-management-system-server.vercel.app/create', formData);
       toast.success(response.data.msg,{position:'top-center'})
 
       setTo("");
