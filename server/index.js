@@ -9,13 +9,12 @@ import InvoiceRoutes from './routes/InvoicRoutes.js';
 dotenv.config();
 const app = express();
 
-app.use(cors(
-    {
-        origin: ["https://aims1.vercel.app/"],
-        methods: ["POST", "GET","PUT","DELETE"],
-        credentials: true
-    }
-));
+app.use(cors({
+    origin: ["https://aims1.vercel.app", "http://localhost:4000"],
+    methods: ["POST", "GET", "PUT", "DELETE"],
+    credentials: true
+}));
+
 app.use(express.json());
 
 mongoose.connect(process.env.URL)
