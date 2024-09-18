@@ -1,0 +1,61 @@
+
+.new-invoice-heading{
+    font-size: 20px;
+    color: rgb(82,80,80);
+    margin-bottom: 10px;
+}
+.first-row{
+    display: flex;
+    gap: 2%;
+    margin-top: 10px;
+}
+.first-row input{
+    padding: 7px;
+    width: 32%;
+    border: 1px solid rgb(49, 46, 46);
+    border-radius: 5px;
+}
+.add-btn{
+    margin-top: 10px;
+    padding: 7px;
+    border: none;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.product-wrapper{
+    height: auto;
+    width: 100%;
+    padding: 5px;
+    background: white;
+    margin-top:10px ;
+    min-height: 250px;
+}
+.product-list{
+    display: flex;
+    gap: 50px;
+
+}
+.product-list p{
+    text-align: left;
+    width: 20%;
+
+}
+.total-wrapper{
+    margin-top: 80px;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid rgb(73, 73, 81);
+}
+
+.total-wrapper p{
+    width: 20%;
+    color: royalblue;
+    padding-top: 10px;
+}
+.header-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

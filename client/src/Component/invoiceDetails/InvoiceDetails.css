@@ -1,0 +1,89 @@
+
+.invoice-container{
+    width: 70%;
+    min-height: 90%;
+    height: auto;
+    background: white;
+    border: 10px solid rgb(36, 59, 174);
+    border-radius: 15px;
+    padding: 0px 50px 0px 50px;
+}
+.header-conatainer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    padding: 50px;
+}
+.header-conatainer img{
+    border-radius: 50%;
+    width: 80px;
+}
+.header-conatainer h1{
+    font-size: 40px;
+    color: rgb(3, 131, 3);
+}
+
+.main-detail-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-table{
+    margin-top: 20px;
+    width: 100%;
+    border-collapse:collapse;
+    background: rgba(156, 199, 156, 0.541);
+}
+th{
+    background:  rgb(22, 128, 22);
+    color: white;
+}
+th,td{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+
+}
+
+.print-btn{
+    border: none;
+    background: blue;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100px;
+    height: 40px;
+}
+.invoice-main-footer{
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    justify-content:flex-start;
+    margin-left: 50%;
+    padding: 30px;
+    margin-top: 0;
+    padding-top: 0px;
+
+}
+.invoice-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 0px;
+}
+.invoice-footer p{
+    color: green;
+    font-weight: 700;
+    font-size: 14px;
+}
+.btn-container{
+    width:  100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
