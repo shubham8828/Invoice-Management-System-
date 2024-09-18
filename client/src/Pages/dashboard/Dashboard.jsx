@@ -13,7 +13,7 @@ const Dashboard = () => {
   // Function to fetch data from the backend
   const getData = async () => {
     try {
-      const response = await axios.post("https://invoice-management-system-server.vercel.app/get", {
+      const response = await axios.post("https://invoice-management-system-server.vercel.app/invoice/get", {
         email: localStorage.getItem("email"),
       }); // Your API endpoint to fetch invoices
       setInvoices(response.data.invoices);
