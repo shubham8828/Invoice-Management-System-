@@ -12,7 +12,7 @@ const Invoices = () => {
     const fetchInvoices = async () => {
       try {
         const email = localStorage.getItem('email');
-        const response = await axios.post('http://localhost:4000/invoice/get', { email });
+        const response = await axios.post('https://invoice-management-system-server.vercel.app/get', { email });
         setInvoices(response.data.invoices);
         console.log(response.data)
 
@@ -27,7 +27,7 @@ const Invoices = () => {
   // Handle invoice deletion
   const deleteInvoice = async (id) => {
     try {
-      await axios.delete(`http://localhost:4000/invoice/delete/${id}`)
+      await axios.delete(`https://invoice-management-system-server.vercel.app/delete/${id}`)
       .then((res)=>{
         toast.success(res.data.msg,{position:'top-center'})
         setInvoices(invoices.filter(invoice => invoice._id !== id));
