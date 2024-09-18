@@ -11,7 +11,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin: ["https://invoice-managementsystem.vercel.app"],
+        origin: ["https://aims1.vercel.app/"],
         methods: ["POST", "GET","PUT","DELETE"],
         credentials: true
     }
