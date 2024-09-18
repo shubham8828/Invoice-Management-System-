@@ -24,7 +24,7 @@ const InvoiceDetails = () => {
     const email = localStorage.getItem('email');
     const fetchUserData = async () => {
       try {
-        const response = await axios.post('http://localhost:4000/api/user', { email });
+        const response = await axios.post('https://invoice-management-system-server.vercel.app/user', { email });
         setUser(response.data.user);
       } catch (error) {
         alert("Internal Server Error");
@@ -63,7 +63,7 @@ const InvoiceDetails = () => {
       };
   
       // Send a PUT request to update the invoice
-      const response = await axios.put(`http://localhost:4000/api/update/${data.invoiceId}`, updatedInvoice);
+      const response = await axios.put(`https://invoice-management-system-server.vercel.app/update/${data.invoiceId}`, updatedInvoice);
       
       // Log the response or updated invoice data if needed
       console.log(response.data);
